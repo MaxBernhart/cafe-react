@@ -27,7 +27,7 @@ function App() {
   return (
     <div className = 'main'>
 
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <nav>
             <Link to="/" style = {linkStyle}>Menu</Link>{' '}
             <li>Cafe</li>
