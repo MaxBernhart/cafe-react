@@ -1,0 +1,171 @@
+#root{
+  width: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.menu{
+  width: 100%;
+
+}
+
+tbody{
+  text-align: center;
+  display: grid;
+  place-content: center;
+  border-bottom: solid 1px black;
+}
+
+td{
+  width: 200px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.c{
+  width: 200px;
+}
+.i{
+  width: 200px;
+}
+.o{
+  width:200px;
+}
+
+td.o1{
+  padding: 0;
+  margin: 0;
+}
+
+.order{
+  display: grid;
+  place-items: center;
+}
+.placer{
+  display: grid;
+  place-items: center;
+}
+
+.menB {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 10px;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: auto;
+
+}
+
+.menB:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.menB:main,
+.menB:focus {
+  user-select: auto;
+}
+
+.menB:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.menB:disabled {
+  cursor: auto;
+}
+
+.buttons{
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+
+.headT{
+  background-color: darkblue;
+  color: white;
+}
+
+.head{
+  width: 100%;
+}
+
+li{
+  display: inline;
+  text-align: center;
+  margin-left: 40%;
+  margin-right: 50%;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size:larger
+}
+
+h1{
+  text-align: center;
+}
+
+.im{
+  width: 100%;
+}
+
+img.banner{
+  width: 100%;
+}
+
+.imgP{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  font-weight: bold;
+  color: white;
+}
+
+nav{
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 10;
+  height: auto;
+  width: 100%;
+  text-align: left;
+  margin: 0px;;
+  background-color: #fcf3ee;
+  
+}
+
+
+
