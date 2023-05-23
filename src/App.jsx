@@ -2,6 +2,7 @@ import { useState } from 'react'
 import React from 'react'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import './App.css'
+import { Routes, Route, HashRouter } from "react-router-dom";
 import Menu from './Menu'
 import Order from './Order'
 
@@ -27,7 +28,7 @@ function App() {
   return (
     <div className = 'main'>
 
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <HashRouter basename={process.env.PUBLIC_URL}>
           <nav>
             <Link to="/" style = {linkStyle}>Menu</Link>{' '}
             <li>Cafe</li>
@@ -38,7 +39,7 @@ function App() {
             <Route path="/cafe-react" element={<Menu addItem={addItem}/>} />
             <Route path="/cafe-react/order" element={<Order orders={order} removeItem = {removeFromOrder}/>} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
     </div>
   )
 }
