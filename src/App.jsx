@@ -35,8 +35,8 @@ function App() {
           </nav>
         
           <Routes>
-            <Route path="/" element={<Menu addItem={addItem}/>} />
-            <Route path="/order" element={<Order orders={order} removeItem = {removeFromOrder}/>} />
+            <Route path="/cafe-react" element={<Menu addItem={addItem}/>} />
+            <Route path="/cafe-react/order" element={<Order orders={order} removeItem = {removeFromOrder}/>} />
           </Routes>
         </BrowserRouter>
     </div>
