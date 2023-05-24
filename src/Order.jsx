@@ -9,7 +9,7 @@ function Order({orders, removeItem}){
         for(let i = 0; i < orders.length; i++){
             if(orders[i].oID == n){
                 removeItem(orders[i]);
-                setUpdate(1);
+                setUpdate(update + 1);
             }
         }
     }

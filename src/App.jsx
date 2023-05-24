@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import React from 'react'
+import ReactDOM from 'react'
 import './App.css'
 import { Routes, Route, HashRouter, Link} from "react-router-dom";
 import Menu from './Menu'
@@ -35,8 +36,8 @@ function App() {
           </nav>
         
           <Routes>
-            <Route path="/cafe-react" element={<Menu addItem={addItem}/>} />
-            <Route path="/cafe-react/order" element={<Order orders={order} removeItem = {removeFromOrder}/>} />
+            <Route path= {"/"} element={<Menu addItem={addItem}/>} />
+            <Route path= {"/order"} element={<Order orders={order} removeItem = {removeFromOrder}/>} />
           </Routes>
         </HashRouter>
     </div>
