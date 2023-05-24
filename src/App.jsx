@@ -25,9 +25,8 @@ function App() {
   }
 
   return (
-    <div className = 'main'>
 
-        <HashRouter basename='/cafe-react'>
+        <HashRouter>
           <nav>
             <Link to="/" style = {linkStyle}>Menu</Link>{' '}
             <li>Cafe</li>
@@ -39,7 +38,7 @@ function App() {
             <Route path="/order" element={<Order orders={order} removeItem = {removeFromOrder}/>} />
           </Routes>
         </HashRouter>
-    </div>
+    
   )
 }
 
