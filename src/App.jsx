@@ -27,7 +27,7 @@ function App() {
   return (
     <div className = 'main'>
 
-        <HashRouter>
+        <HashRouter basename='/cafe-react'>
           <nav>
             <Link to="/" style = {linkStyle}>Menu</Link>{' '}
             <li>Cafe</li>
