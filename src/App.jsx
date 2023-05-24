@@ -27,7 +27,7 @@ function App() {
   return (
     <div className = 'main'>
 
-        <BrowserRouter>
+        <HashRouter>
           <nav>
             <Link to="/" style = {linkStyle}>Menu</Link>{' '}
             <li>Cafe</li>
@@ -38,7 +38,7 @@ function App() {
             <Route path="/" element={<Menu addItem={addItem}/>} />
             <Route path="/order" element={<Order orders={order} removeItem = {removeFromOrder}/>} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
     </div>
   )
 }
