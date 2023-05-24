@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import React from 'react'
 import './App.css'
-import { Routes, Route, Link, BrowserRouter} from "react-router-dom";
+import { Routes, Route, Link, HashRouter} from "react-router-dom";
 import Menu from './Menu'
 import Order from './Order'
 
