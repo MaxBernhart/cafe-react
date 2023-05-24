@@ -34,7 +34,6 @@ function App() {
             <li>Cafe</li>
             <Link to="/order">Cart</Link>{' '}
           </nav>
-        
           <Routes>
             <Route path= {"/"} element={<Menu addItem={addItem}/>} />
             <Route path= {"/order"} element={<Order orders={order} removeItem = {removeFromOrder}/>} />
