@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import React from 'react'
-import ReactDOM from 'react'
 import './App.css'
-import { Routes, Route, HashRouter, Link} from "react-router-dom";
+import { Routes, Route, Link, BrowserRouter} from "react-router-dom";
 import Menu from './Menu'
 import Order from './Order'
 
@@ -28,17 +27,18 @@ function App() {
   return (
     <div className = 'main'>
 
-        <HashRouter>
+        <BrowserRouter>
           <nav>
             <Link to="/" style = {linkStyle}>Menu</Link>{' '}
             <li>Cafe</li>
             <Link to="/order">Cart</Link>{' '}
           </nav>
+
           <Routes>
-            <Route path= {"/cafe-react/order"} element={<Order orders={order} removeItem = {removeFromOrder}/>} />
-            <Route path= {"/cafe-react"} element={<Menu addItem={addItem}/>} />
+            <Route path="/" element={<Menu addItem={addItem}/>} />
+            <Route path="/order" element={<Order orders={order} removeItem = {removeFromOrder}/>} />
           </Routes>
-        </HashRouter>
+        </BrowserRouter>
     </div>
   )
 }
