@@ -35,8 +35,8 @@ function App() {
             <Link to="/order">Cart</Link>{' '}
           </nav>
           <Routes>
-            <Route path= {"/"} element={<Menu addItem={addItem}/>} />
             <Route path= {"/order"} element={<Order orders={order} removeItem = {removeFromOrder}/>} />
+            <Route path= {"/"} element={<Menu addItem={addItem}/>} />
           </Routes>
         </HashRouter>
     </div>
