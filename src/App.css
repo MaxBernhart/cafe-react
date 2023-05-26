@@ -21,6 +21,11 @@ td{
   font-weight: bold;
 }
 
+td.ordertd{
+  width: 40%;
+}
+
+
 .c{
   width: 200px;
 }
@@ -100,6 +105,10 @@ td{
 
 .menB:disabled {
   cursor: auto;
+}
+
+.ob{
+  background-color: lightgray;
 }
 
 .buttons{

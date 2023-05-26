@@ -9,7 +9,7 @@ function MenuItem({name, cost, id, doOrder}){
             <tr>
                 <td className = 'b'>{name}</td>
                 <td className = 'b'>{cost}</td>
-                <td className = 'b'><button onClick={orderItem}>Order</button></td>
+                <td className = 'b'><button className = 'ob' onClick={orderItem}>Order</button></td>
             </tr>
         </div>
     );

@@ -17,6 +17,7 @@ function Order({orders, removeItem}){
     if(orders.length != 0){
         return(
             <div className = 'order'>
+                <h1>My Cart</h1>
                 <table>
                     {orders.map((e) => {return(<OrderItem name = {e.name} cost = {e.cost} oId = {e.oID} removeOrder={remove}/>)})}
                 </table>
