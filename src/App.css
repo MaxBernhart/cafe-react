@@ -110,6 +110,9 @@ td.ordertd{
 .ob{
   background-color: lightgray;
 }
+.ob:active{
+  background-color: darkblue;
+}
 
 .buttons{
   width: fit-content;
